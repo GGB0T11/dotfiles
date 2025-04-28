@@ -1,0 +1,41 @@
+/* Versão compatível com GTK */
+window {
+    margin: 0;
+    border: 2px solid #2a2a2a;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+}
+
+#input {
+    margin: 0;
+    padding: 0;
+}
+
+#inner-box {
+    margin: 8px;
+    padding: 0;
+}
+
+#entry {
+    padding: 8px 12px;
+    color: #e0e0e0;
+    border-radius: 3px;
+    margin: 2px 0;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: #3a3a3a;
+    border: none;
+    outline: none;
+}
+
+#text {
+    font-family: "JetBrains Mono", "Iosevka Nerd Font";
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+list {
+    background-color: transparent;
+}
