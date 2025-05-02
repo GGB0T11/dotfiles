@@ -1,0 +1,43 @@
+{
+  "theme.font.size": "1.0rem",
+  "menus.transition": "crossfade",
+  "menus.clock.time.hideSeconds": true,
+  "menus.clock.weather.enabled": false,
+  "theme.bar.buttons.modules.ram.enableBorder": false,
+  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.directories.enabled": false,
+  "menus.clock.time.military": true,
+  "theme.bar.buttons.modules.microphone.enableBorder": false,
+  "bar.customModules.microphone.label": true,
+  "bar.workspaces.show_numbered": true,
+  "bar.workspaces.workspaceMask": false,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.numbered_active_indicator": "underline",
+  "bar.windowtitle.icon": true,
+  "bar.clock.format": "%d %b | %H:%M",
+  "bar.clock.showIcon": false,
+  "bar.layouts": {
+    "*": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "volume",
+        "bluetooth",
+        "network",
+        "battery",
+        "notifications"
+      ]
+    }
+  },
+  "menus.dashboard.controls.enabled": true,
+  "theme.bar.location": "top",
+  "bar.media.show_label": true,
+  "bar.media.truncation": true,
+  "menus.dashboard.powermenu.avatar.image": "/home/gustavo/Pictures/Profiles/_.jpeg"
+}
