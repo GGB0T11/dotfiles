@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory containing the wallpapers
-WALLPAPER_DIR="$HOME/Wallpapers/Gruvbox"
+WALLPAPER_DIR="$HOME/Wallpapers/"
 
 # Find all image files in the wallpaper directory (jpg, jpeg, png, gif)
 wallpapers=($(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.gif" \)))
@@ -38,3 +38,4 @@ selected_pos="${transitions_pos[$RANDOM % ${#transitions_pos[@]}]}"
 
 # Change wallpaper using swww with selected image and random transition settings
 swww img "$selected_wall" --transition-type "$selected_type" --transition-pos "$selected_pos"
+
