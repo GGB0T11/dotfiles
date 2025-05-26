@@ -21,7 +21,8 @@
       "left": [
         "dashboard",
         "workspaces",
-        "windowtitle"
+        "windowtitle",
+        "cava"
       ],
       "middle": [
         "clock"
@@ -347,7 +348,7 @@
   "theme.bar.buttons.icon_background": "#242438",
   "theme.bar.buttons.background": "#282828",
   "theme.bar.buttons.style": "default",
-  "theme.bar.background": "#11111b",
+  "theme.bar.background": "#1d2021",
   "theme.osd.label": "#83a598",
   "theme.osd.icon": "#1d2021",
   "theme.osd.bar_overflow_color": "#cc241d",
@@ -444,5 +445,7 @@
   "menus.power.lowBatteryThreshold": 40,
   "theme.matugen": false,
   "wallpaper.image": "",
-  "wallpaper.enable": false
+  "wallpaper.enable": false,
+  "theme.bar.menus.enableShadow": false,
+  "theme.bar.buttons.modules.cava.enableBorder": false
 }
