@@ -1,0 +1,40 @@
+window {
+    margin: 0px;
+    border: 1px solid #565f89; /* Cinza dos comentários */
+    background-color: #1a1b26; /* Background principal */
+}
+
+#input {
+    margin: 5px;
+    border: 2px solid #7aa2f7; /* Azul vibrante */
+    color: #c0caf5; /* Texto */
+    background-color: #24283b; /* Fundo da barra de pesquisa */
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #1a1b26;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #1a1b26;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #c0caf5; /* Texto da lista */
+}
+
+#entry:selected {
+    background-color: #414868; /* Azul mais escuro para seleção */
+    border: 1px solid #7aa2f7; /* Azul na borda do selecionado */
+}
