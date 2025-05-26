@@ -1,6 +1,17 @@
 return {
 	{
-		-- Tema suave e agradável
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			local theme = require("config.theme")
+            require("lualine").setup({
+				options = {
+					theme = theme.lualine_theme,
+				},
+			})
+		end,
+	},
+    {
 		"catppuccin/nvim",
 		lazy = false,
 		name = "catppuccin",
@@ -9,18 +20,6 @@ return {
 			require("catppuccin").setup({
 				transparent_background = true,
 				term_colors = true,
-			})
-		end,
-	},
-	{
-		-- Barra de status
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("lualine").setup({
-				options = {
-					theme = "gruvbox",
-				},
 			})
 		end,
 	},
@@ -60,4 +59,21 @@ return {
 			})
 		end,
 	},
+    {
+    "neanias/everforest-nvim",
+    lazy = false,
+    priority = 1000,
+      config = function()
+        require("everforest").setup({
+            background = "medium",
+            terminal_colors = true,
+			italic = {
+				strings = true,
+				comments = true,
+			},
+            transparent_background_level = 2,
+        })
+      end,
+    },
+
 }

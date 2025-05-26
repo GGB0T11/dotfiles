@@ -13,4 +13,5 @@ require("plugins.appearance")
 require("plugins.debugging")
 
 -- Definir tema
-vim.cmd.colorscheme("gruvbox")
+local theme = require("config.theme")
+vim.cmd.colorscheme(theme.nvim_colorscheme)
