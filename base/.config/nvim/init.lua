@@ -10,6 +10,7 @@ require("plugins.navigation")
 require("plugins.utils")
 require("plugins.completions")
 require("plugins.appearance")
+require("plugins.lualine")
 require("plugins.debugging")
 
 -- Definir tema
