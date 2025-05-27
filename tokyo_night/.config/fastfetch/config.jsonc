@@ -1,52 +1,47 @@
 {
-  "logo": {
+    "logo": {
     "type": "file",
     "source": "~/.config/fastfetch/linux_ascii.txt",
-    "color": {
-      "1": "#8aadf4",
-      "2": "#f5a97f",
-      "3": "#f38ba8"
-    }
+    "color": {"1": "#7AA2F7"}
   },
-  "display": {
-    "separator": "➜   "
+    "display": {
+        "separator": "➜   "
   },
   "modules": [
     {
-      "key": "| OS       ",
-      "keyColor": "#8aadf4",
-      "type": "os"
+        "key": "| OS       ",
+        "keyColor": "#7AA2F7",
+        "type": "os"
     },
     {
-      "key": "| PC       ",
-      "keyColor": "#8aadf4",
-      "type": "host"
+        "key": "| PC       ",
+        "keyColor": "#7AA2F7",
+        "type": "host"
     },
     {
-      "key": "| Uptime   ",
-      "keyColor": "#f5a97f",
-      "type": "uptime"
+        "key": "| Uptime   ",
+        "keyColor": "#7AA2F7",
+        "type": "uptime"
     },
     {
-      "key": "| Packages ",
-      "keyColor": "#f5a97f",
-      "type": "packages"
+        "key": "| Packages ",
+        "keyColor": "#7AA2F7",
+        "type": "packages"
     },
     {
-      "key": "| CPU      ",
-      "keyColor": "#f38ba8",
-      "type": "cpu"
+        "key": "| CPU      ",
+        "keyColor": "#7AA2F7",
+        "type": "cpu"
     },
     {
-      "key": "| RAM      ",
-      "keyColor": "#f38ba8",
-      "type": "memory"
+        "key": "| RAM      ",
+        "keyColor": "#7AA2F7",
+        "type": "memory"
     },
     {
-      "key": "| Disk     ",
-      "keyColor": "#f38ba8",
-      "type": "disk"
+        "key": "| Disk     ",
+        "keyColor": "#7AA2F7",
+        "type": "disk"
     }
-  ]
+  ],
 }
-
