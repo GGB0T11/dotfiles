@@ -12,6 +12,17 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 automatic_installation = true,
+                ensure_installed = {
+                    "lua_ls",
+                    "pyright",
+                    "eslint",
+                    "clangd",
+                    "rust_analyzer",
+                    "gopls",
+                    "html",
+                    "cssls",
+                    "jsonls",
+                },
             })
         end,
     },
