@@ -1,0 +1,47 @@
+{
+    "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/linux_ascii.txt",
+    "color": {"1": "#81A1C1"}
+  },
+    "display": {
+        "separator": "➜   "
+  },
+  "modules": [
+    {
+        "key": "| OS       ",
+        "keyColor": "#81A1C1",
+        "type": "os"
+    },
+    {
+        "key": "| PC       ",
+        "keyColor": "#81A1C1",
+        "type": "host"
+    },
+    {
+        "key": "| Uptime   ",
+        "keyColor": "#81A1C1",
+        "type": "uptime"
+    },
+    {
+        "key": "| Packages ",
+        "keyColor": "#81A1C1",
+        "type": "packages"
+    },
+    {
+        "key": "| CPU      ",
+        "keyColor": "#81A1C1",
+        "type": "cpu"
+    },
+    {
+        "key": "| RAM      ",
+        "keyColor": "#81A1C1",
+        "type": "memory"
+    },
+    {
+        "key": "| Disk     ",
+        "keyColor": "#81A1C1",
+        "type": "disk"
+    }
+  ],
+}
