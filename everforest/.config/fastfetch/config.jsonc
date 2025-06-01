@@ -1,47 +1,48 @@
 {
     "logo": {
-    "type": "file",
-    "source": "~/.config/fastfetch/linux_ascii.txt",
-    "color": {"1": "#A7C080"}
-  },
+        "type": "file",
+        "source": "/home/gustavo/.config/fastfetch/linux_ascii.txt",
+        "color": {"1": "#A7C080"}
+    },
     "display": {
-        "separator": "➜   "
-  },
-  "modules": [
-    {
-        "key": "| OS       ",
-        "keyColor": "#A7C080",
-        "type": "os"
+        "separator": "➜    ",
+        "color": {
+            "keys": "#A7C080",
+            "values": "default"
+        }
     },
-    {
-        "key": "| PC       ",
-        "keyColor": "#A7C080",
-        "type": "host"
-    },
-    {
-        "key": "| Uptime   ",
-        "keyColor": "#A7C080",
-        "type": "uptime"
-    },
-    {
-        "key": "| Packages ",
-        "keyColor": "#A7C080",
-        "type": "packages"
-    },
-    {
-        "key": "| CPU      ",
-        "keyColor": "#A7C080",
-        "type": "cpu"
-    },
-    {
-        "key": "| RAM      ",
-        "keyColor": "#A7C080",
-        "type": "memory"
-    },
-    {
-        "key": "| Disk     ",
-        "keyColor": "#A7C080",
-        "type": "disk"
-    }
-  ],
+    "modules": [
+        {
+            "key": "| OS         ",
+            "type": "os"
+        },
+        {
+            "key": "| PC         ",
+            "type": "host"
+        },
+        {
+            "key": "| Uptime     ",
+            "type": "uptime"
+        },
+        {
+            "key": "| Packages   ",
+            "type": "packages"
+        },
+        {
+            "key": "| CPU        ",
+            "type": "cpu"
+        },
+        {
+            "key": "| RAM        ",
+            "type": "memory"
+        },
+        {
+            "key": "| Disk       ",
+            "type": "disk"
+        },
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
 }
