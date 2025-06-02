@@ -26,7 +26,7 @@ install_pkgs() {
         git stow kitty swww hyprland hyprlock kitty zsh neovim
         btop superfile wofi fastfetch waybar wpctl brightnessctl
         playerctl grimblast bluez bluez-utils networkmanager
-        power-profiles-daemon
+        power-profiles-daemon polkit-gnome
         )
 
     YAY_PKGS=(
