@@ -13,13 +13,16 @@
         "clock"
     ],
     "modules-right": [
+        "bluetooth",
+        "backlight",
         "network",
         "pulseaudio",
         "battery"
     ],
     "custom/icon": {
         "format": "󰣇",
-        "on-click": "wlogout"
+        "on-click": "wlogout",
+        "tooltip": false
     },
     "hyprland/workspaces": {
         "format": "{name}",
@@ -27,7 +30,25 @@
     },
     "clock": {
         "format": "{:%H:%M}",
-        "format-alt": "{:%d %b %Y}"
+        "format-alt": "{:%d %b %Y}",
+        "tooltip": false
+
+    },
+    "bluetooth": {
+        "format": "󰂰",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "format-alt": "󰂰 {num_connections} connected",
+        "tooltip": false,
+        "on-click-right": "blueman-manager"
+    },
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-alt": "{icon} {percent}%",
+        "on-scroll-up": "brightnessctl s 5%+",
+        "on-scroll-down": "brightnessctl s 5%-",
+        "tooltip": false
     },
     "network": {
         "format-wifi": " ",
