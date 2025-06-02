@@ -38,7 +38,7 @@ if [[ -d "$WALLPAPER_DIR" ]]; then
     swww img "$WP"
 fi
 
-hyprpanel -q; hyprpanel & disown
+killall waybar && waybar &
 
 pkill -USR1 kitty 2>/dev/null || true
 exec kitty @ load-config 2>/dev/null || source ~/.zshrc 2>/dev/null || true

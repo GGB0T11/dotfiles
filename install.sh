@@ -24,13 +24,13 @@ verify_dots() {
 install_pkgs() {
     PACMAN_PKGS=(
         git stow kitty swww hyprland hyprlock kitty zsh neovim
-        btop superfile wofi fastfetch wpctl brightnessctl
+        btop superfile wofi fastfetch waybar wpctl brightnessctl
         playerctl grimblast bluez bluez-utils networkmanager
         power-profiles-daemon
         )
 
     YAY_PKGS=(
-        ags-hyprpanel-git brave-bin nerd-fonts-fira-code
+        brave-bin nerd-fonts-fira-code
         )
 
     if ! command -v yay &>/dev/null; then
