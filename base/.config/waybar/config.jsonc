@@ -21,7 +21,7 @@
     ],
     "custom/icon": {
         "format": "󰣇",
-        "on-click": "wlogout",
+        "on-click": "wlogout --buttons-per-row 5-1",
         "tooltip": false
     },
     "hyprland/workspaces": {
