@@ -1,0 +1,22 @@
+{
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Nord",
+    "git.confirmSync": false,
+    "git.ignoreRebaseWarning": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontFamily": "'FiraCode Nerd Font', 'monospace'",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.fontSize": 14
+}
