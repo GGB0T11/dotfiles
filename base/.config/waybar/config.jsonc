@@ -5,20 +5,13 @@
     "margin-top": 4,
     "margin-left": 8,
     "margin-right": 8,
-    "modules-left": [
-        "custom/icon",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "clock"
-    ],
-    "modules-right": [
-        "bluetooth",
-        "backlight",
-        "network",
-        "pulseaudio",
-        "battery"
-    ],
+    "modules-left": ["custom/icon", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "group/system-info"],
+    "group/system-info": {
+        "orientation": "horizontal",
+        "modules": ["bluetooth", "backlight", "network", "pulseaudio", "battery"]
+    },
     "custom/icon": {
         "format": "󰣇",
         "on-click": "wlogout --buttons-per-row 5-1",
@@ -32,7 +25,10 @@
         "format": "{:%H:%M}",
         "format-alt": "{:%d %b %Y}",
         "tooltip": false
-
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
     },
     "bluetooth": {
         "format": "󰂰",
@@ -44,7 +40,9 @@
     },
     "backlight": {
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-icons": [
+            "", "", "", "", "", "", "", "", ""
+        ],
         "format-alt": "{icon} {percent}%",
         "on-scroll-up": "brightnessctl s 5%+",
         "on-scroll-down": "brightnessctl s 5%-",
@@ -76,8 +74,7 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-icons": [
-            "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
-        ]
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     }
 }
+
