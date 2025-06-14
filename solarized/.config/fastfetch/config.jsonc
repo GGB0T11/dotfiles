@@ -1,46 +1,55 @@
 {
     "logo": {
         "type": "file",
-        "source": "/home/gustavo/.config/fastfetch/linux_ascii.txt",
-        "color": {"1": "#2AA198"}
+        "source": "~/.config/fastfetch/linux_ascii.txt",
+        "color": {
+            "1": "#cb4b16",
+            "2": "#586e75",
+            "3": "#657b83"
+        }
     },
     "display": {
-        "separator": "➜    ",
-        "color": {
-            "keys": "#2AA198",
-            "values": "default"
-        }
+        "separator": ""
     },
     "modules": [
         {
-            "key": "| OS         ",
+            "key": "|  OS ❯ ",
+            "keyColor": "#cb4b16",
             "type": "os"
         },
         {
-            "key": "| PC         ",
+            "key": "| 󰌢 PC ❯ ",
+            "keyColor": "#cb4b16",
             "type": "host"
         },
         {
-            "key": "| Uptime     ",
+            "key": "|  Uptime ❯ ",
+            "keyColor": "#586e75",
             "type": "uptime"
         },
         {
-            "key": "| Packages   ",
+            "key": "|  Packages ❯ ",
+            "keyColor": "#586e75",
             "type": "packages"
         },
         {
-            "key": "| CPU        ",
+            "key": "|  CPU ❯ ",
+            "keyColor": "#657b83",
             "type": "cpu"
         },
         {
-            "key": "| RAM        ",
+            "key": "|  RAM ❯ ",
+            "keyColor": "#657b83",
             "type": "memory"
         },
         {
-            "key": "| Disk       ",
+            "key": "|  Disk❯ ",
+            "keyColor": "#657b83",
             "type": "disk"
         },
         {
+            "key": "|  Pallete ❯ ",
+            "keyColor": "#fdf6e3",
             "type": "colors",
             "symbol": "circle"
         }
