@@ -37,18 +37,30 @@ window#waybar {
 #tray,
 #bluetooth,
 #backlight,
-#network,
+#custom-network,
 #pulseaudio,
-#battery {
+#custom-mic,
+#battery,
+#custom-notification {
     padding: 0 10px;
+}
+
+#battery.charging,
+#battery.warning,
+#battery.critical {
+    border-radius: 6px;
+    color: @background;
 }
 
 #battery.charging {
     background-color: @color10;
-    color: @background;
 }
 
 #battery.warning {
-    background-color: @color1;
-    color: @background;
+    background-color: @color3;
 }
+
+#battery.critical {
+    background-color: @color1;   
+}
+

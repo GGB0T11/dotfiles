@@ -10,7 +10,7 @@
     "modules-right": ["tray", "group/system-info"],
     "group/system-info": {
         "orientation": "horizontal",
-        "modules": ["bluetooth", "backlight", "network", "pulseaudio", "battery"]
+        "modules": ["bluetooth", "backlight", "custom/network", "pulseaudio", "custom/mic", "battery", "custom/notification"]
     },
     "custom/icon": {
         "format": "󰣇",
@@ -48,33 +48,61 @@
         "on-scroll-down": "brightnessctl s 5%-",
         "tooltip": false
     },
-    "network": {
-        "format-wifi": " ",
-        "format-ethernet": "󰈀 ",
-        "format-disconnected": "󰖪 ",
-        "format-alt": "  {essid}",
-        "tooltip-format": "({signalStrength}%)",
-        "on-click-right": "nm-connection-editor"
+    "custom/network": {
+        "exec": "~/.config/waybar/scripts/network.sh",
+        "interval": "once",
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/network.sh toggle",
+        "on-click-right": "nm-connection-editor",
+        "tooltip": false
     },
     "pulseaudio": {
-        "format": "  {volume}% {format_source}",
-        "format-muted": "  {format_source}",
-        "format-source": "",
-        "format-source-muted": "󰍭",
+        "format": "  {volume}%",
+        "format-muted": "",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-right": "pavucontrol"
+        "on-click-right": "pavucontrol",
+        "tooltip": false
+    },
+    "custom/mic": {
+        "exec": "~/.config/waybar/scripts/mic.sh",
+        "interval": 1,
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/mic.sh toggle",
+        "on-click-right": "pavucontrol",
+        "tooltip": false
     },
     "battery": {
         "states": {
-            "warning": 30,
-            "critical": 15
+            "warning": 50,
+            "critical": 20
         },
         "format": "{icon} {capacity}%",
         "format-full": "{icon}",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": false
+    },
+    "custom/notification": {
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": "󰂛",
+            "inhibited-notification": "",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t",
+        "on-click-right": "swaync-client -d",
+        "tooltip": false,
+        "escape": true
     }
 }
 
